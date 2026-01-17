@@ -1,56 +1,67 @@
-# house-pricr-prediction-
+# California House Price Prediction
 
-## California Housing Price Prediction using Machine Learning
+## Project Overview
+This project predicts median house prices in California using the California Housing Dataset. It builds an end-to-end machine learning pipeline covering data preprocessing, feature engineering, model training, evaluation, and production-ready inference. The project follows real-world machine learning practices such as stratified sampling, preprocessing pipelines, cross-validation, and model persistence, making it suitable for data science and machine learning internship roles.
 
-This project focuses on predicting median house prices in California using the California Housing Dataset. The goal is to build an end-to-end machine learning pipeline that handles data preprocessing, feature engineering, model training, evaluation, and deployment-ready inference.
+## Objectives
+Predict median house values accurately
+Reduce sampling bias using stratified sampling
+Compare multiple regression models
+Build a reusable and scalable machine learning pipeline
+Ensure consistent preprocessing during training and inference
 
-The project follows real-world ML practices, including stratified sampling, pipelines, cross-validation, and model persistence.
-
-## Technologies & Libraries
+## Technologies and Libraries
 Python
-Pandas, NumPy
+Pandas
+NumPy
 Scikit-learn
 Joblib
-Matplotlib / Seaborn (for EDA, if used)
+Matplotlib
+Seaborn
 
-## Key Steps & Methodology
+## Key Steps and Methodology
 
-1️⃣ Stratified Sampling
-Created an income category using median_income
-Applied StratifiedShuffleSplit to ensure train/test sets maintain the same income distribution
-Prevents sampling bias and improves model reliability
+Stratified Sampling
+Created an income category using the median_income feature
+Applied StratifiedShuffleSplit to maintain the same income distribution in training and testing datasets
+Improved model reliability by reducing sampling bias
 
-2️⃣ Data Preprocessing Pipeline
-Used Scikit-learn Pipelines and ColumnTransformer:
-Missing values handled using median imputation
-Feature scaling using StandardScaler
-Categorical Features
-Handled using OneHotEncoder
+## Data Preprocessing Pipeline
+Built using Scikit-learn Pipelines and ColumnTransformer
+Handled missing values using median imputation
+Scaled numerical features using StandardScaler
+Encoded categorical features using OneHotEncoder
+Ensured automated and consistent preprocessing
 
-3️⃣ Model Training
-Trained and compared multiple regression models:
-Linear Regression
+## Model Training
+Trained and compared Linear Regression
 Decision Tree Regressor
 Random Forest Regressor
 
-4️⃣ Model Evaluation
-Used 10-fold Cross-Validation
-Evaluation metric: Root Mean Squared Error (RMSE)
-Random Forest achieved the best performance due to its ability to capture non-linear patterns
+## Model Evaluation
+Used 10-fold cross-validation
+Evaluation metric was Root Mean Squared Error
+Random Forest performed best due to capturing non-linear patterns
 
-5️⃣ Production-Ready Inference Pipeline
-Trained model and preprocessing pipeline saved using Joblib
-New input data is transformed using the same pipeline
-Predictions are generated and exported as a CSV file
-Ensures consistent preprocessing during training and inference
+## Production-Ready Inference
+Saved trained model and preprocessing pipeline using Joblib
+Applied the same pipeline to new input data
+Generated predictions and exported results as a CSV file
+Maintained consistency between training and inference
 
-📈 Results
+## Results and Insights
 Random Forest outperformed Linear Regression and Decision Tree models
-Cross-validation helped prevent overfitting
-Pipeline-based approach made the model scalable and deployment-ready
+Cross-validation reduced overfitting
+Pipeline-based design made the model scalable and deployment-ready
 
-🔗 Use Cases
+## Use Cases
 Real estate price estimation
-Data science internship projects
-ML pipeline and deployment practice
-Regression problem understanding
+Data science and machine learning internship projects
+Understanding regression problems
+End-to-end machine learning pipeline practice
+
+## Project Highlights
+Complete end-to-end machine learning workflow
+Industry-standard preprocessing pipeline
+Proper model comparison and evaluation
+Clean and reusable code structure

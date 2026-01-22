@@ -65,3 +65,12 @@ Complete end-to-end machine learning workflow
 Industry-standard preprocessing pipeline
 Proper model comparison and evaluation
 Clean and reusable code structure
+
+## 👤 Author
+
+Sanil Gupta  
+BCA (AI & ML) Student  
+Aspiring Data Scientist
+
+GitHub: https://github.com/Sanil656  
+LinkedIn: https://www.linkedin.com/in/sanil-gupta-64bb11314/
